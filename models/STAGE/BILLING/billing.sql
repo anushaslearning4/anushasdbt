@@ -1,7 +1,7 @@
 {{
     config(
         materialized='incremental',
-        unique_key='order_no'
+        unique_key='order_id'
     )
 }}
 

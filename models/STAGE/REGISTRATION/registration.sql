@@ -1,7 +1,7 @@
 {{
     config(
         materialized='incremental',
-        unique_key='serial_number'
+        unique_key='serial_number || email'
     )
 }}
 
