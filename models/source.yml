@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: crd
+    database: RAW_CRD_DATABASE
+    schema : RAW_CRD_SCHEMA
+    tables :
+      - name: RAW_BILLING_LA
+        columns:
+          - name: ORDER_ID
+            tests:
+              - unique
+              - not_null
+          - name: email 
+            tests: 
+              - not_null         
+      - name: RAW_BILLING_NA
+      - name: RAW_ORDERS_LA
+      - name: RAW_ORDERS_NA
+      - name: RAW_REGISTRATION_LA
+      - name: RAW_REGISTRATION_NA
+      - name: RAW_REVIEW_LA
+      - name: RAW_REVIEW_NA
+      - name: RAW_TECHSUPPORT_LA
+      - name: RAW_TECHSUPPORT_NA
